@@ -1,0 +1,85 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1
+Relation:     World Bank-weka.filters.unsupervised.attribute.Remove-R14-weka.filters.unsupervised.attribute.Remove-R13
+Instances:    245
+Attributes:   13
+              AG_PRD_FOOD_XD
+              BX_KLT_DINV_WD_GD_ZS
+              EN_POP_DNST
+              FB_ATM_TOTL_P5
+              IT_CEL_SETS_P2
+              IT_NET_BBND_P2
+              MS_MIL_XPND_GD_ZS
+              SE_PRE_ENRR
+              SE_XPD_TOTL_GD_ZS
+              SP_POP_0014_TO_ZS
+              SP_POP_1564_TO_ZS
+              SP_POP_GROW
+              TYPE1
+Test mode:20-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+REPTree
+============
+
+IT_NET_BBND_P2 < 7.15
+|   AG_PRD_FOOD_XD < 102.45
+|   |   BX_KLT_DINV_WD_GD_ZS < 2.5
+|   |   |   IT_CEL_SETS_P2 < 14.25 : Normal (3/0) [1/0]
+|   |   |   IT_CEL_SETS_P2 >= 14.25 : Growing (10/5) [6/2]
+|   |   BX_KLT_DINV_WD_GD_ZS >= 2.5
+|   |   |   MS_MIL_XPND_GD_ZS < 3.25
+|   |   |   |   AG_PRD_FOOD_XD < 93 : Growing (3/0) [1/0]
+|   |   |   |   AG_PRD_FOOD_XD >= 93
+|   |   |   |   |   MS_MIL_XPND_GD_ZS < 0.75 : Normal (12/0) [5/2]
+|   |   |   |   |   MS_MIL_XPND_GD_ZS >= 0.75
+|   |   |   |   |   |   AG_PRD_FOOD_XD < 101.15
+|   |   |   |   |   |   |   SE_XPD_TOTL_GD_ZS < 4.2 : Growing (7/3) [5/2]
+|   |   |   |   |   |   |   SE_XPD_TOTL_GD_ZS >= 4.2 : Normal (7/0) [3/1]
+|   |   |   |   |   |   AG_PRD_FOOD_XD >= 101.15 : Growing (6/1) [3/1]
+|   |   |   MS_MIL_XPND_GD_ZS >= 3.25 : Growing (6/0) [5/0]
+|   AG_PRD_FOOD_XD >= 102.45
+|   |   SE_XPD_TOTL_GD_ZS < 3.95
+|   |   |   IT_CEL_SETS_P2 < 60.85 : Growing (27/0) [14/5]
+|   |   |   IT_CEL_SETS_P2 >= 60.85
+|   |   |   |   EN_POP_DNST < 66.8 : Growing (3/0) [3/2]
+|   |   |   |   EN_POP_DNST >= 66.8 : Normal (6/2) [3/1]
+|   |   SE_XPD_TOTL_GD_ZS >= 3.95
+|   |   |   SP_POP_1564_TO_ZS < 64.85 : Normal (22/8) [10/4]
+|   |   |   SP_POP_1564_TO_ZS >= 64.85 : Growing (10/0) [5/2]
+IT_NET_BBND_P2 >= 7.15 : Normal (41/10) [18/6]
+
+Size of the tree : 27
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         159               64.898  %
+Incorrectly Classified Instances        86               35.102  %
+Kappa statistic                          0.337 
+Mean absolute error                      0.3012
+Root mean squared error                  0.4136
+Relative absolute error                 81.5847 %
+Root relative squared error             96.3801 %
+Total Number of Instances              245     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.769     0.375      0.652     0.769     0.706      0.711    Growing
+                 0.605     0.282      0.651     0.605     0.627      0.659    Normal
+                 0         0.004      0         0         0          0.531    Stale
+Weighted Avg.    0.649     0.311      0.614     0.649     0.629      0.677
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 90 27  0 |  a = Growing
+ 44 69  1 |  b = Normal
+  4 10  0 |  c = Stale
+

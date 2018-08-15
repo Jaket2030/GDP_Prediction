@@ -1,0 +1,52 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8
+Relation:     World Bank-weka.filters.unsupervised.attribute.Remove-R14-15
+Instances:    245
+Attributes:   13
+              AG_PRD_FOOD_XD
+              BX_KLT_DINV_WD_GD_ZS
+              EN_POP_DNST
+              FB_ATM_TOTL_P5
+              IT_CEL_SETS_P2
+              IT_NET_BBND_P2
+              MS_MIL_XPND_GD_ZS
+              SE_PRE_ENRR
+              SE_XPD_TOTL_GD_ZS
+              SP_POP_0014_TO_ZS
+              SP_POP_1564_TO_ZS
+              SP_POP_GROW
+              NY_GDP_MKTP_KD_ZG
+Test mode:20-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+Linear Regression Model
+
+NY_GDP_MKTP_KD_ZG =
+
+      0.0706 * AG_PRD_FOOD_XD +
+      0.0003 * EN_POP_DNST +
+     -0.0085 * FB_ATM_TOTL_P5 +
+     -0.0108 * IT_CEL_SETS_P2 +
+     -0.0564 * IT_NET_BBND_P2 +
+     -0.012  * SE_PRE_ENRR +
+     -0.133  * SE_XPD_TOTL_GD_ZS +
+     -0.028  * SP_POP_0014_TO_ZS +
+      0.1033 * SP_POP_1564_TO_ZS +
+      0.468  * SP_POP_GROW +
+     -7.198 
+
+Time taken to build model: 0 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.2973
+Mean absolute error                      1.7639
+Root mean squared error                  2.6017
+Relative absolute error                 91.5696 %
+Root relative squared error            102.2135 %
+Total Number of Instances              245     
+

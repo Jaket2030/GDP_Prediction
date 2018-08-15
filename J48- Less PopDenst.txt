@@ -1,0 +1,104 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     World Bank-weka.filters.unsupervised.attribute.Remove-R13-weka.filters.unsupervised.attribute.Remove-R13-weka.filters.unsupervised.attribute.Remove-R3
+Instances:    245
+Attributes:   12
+              AG_PRD_FOOD_XD
+              BX_KLT_DINV_WD_GD_ZS
+              FB_ATM_TOTL_P5
+              IT_CEL_SETS_P2
+              IT_NET_BBND_P2
+              MS_MIL_XPND_GD_ZS
+              SE_PRE_ENRR
+              SE_XPD_TOTL_GD_ZS
+              SP_POP_0014_TO_ZS
+              SP_POP_1564_TO_ZS
+              SP_POP_GROW
+              TYPE1
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+FB_ATM_TOTL_P5 <= 59.3
+|   MS_MIL_XPND_GD_ZS <= 0
+|   |   BX_KLT_DINV_WD_GD_ZS <= 2.5
+|   |   |   IT_CEL_SETS_P2 <= 14.1: Normal (3.0)
+|   |   |   IT_CEL_SETS_P2 > 14.1
+|   |   |   |   SP_POP_0014_TO_ZS <= 34.8: Growing (2.0)
+|   |   |   |   SP_POP_0014_TO_ZS > 34.8: Stale (3.0)
+|   |   BX_KLT_DINV_WD_GD_ZS > 2.5
+|   |   |   SP_POP_GROW <= 1.2: Normal (19.0)
+|   |   |   SP_POP_GROW > 1.2
+|   |   |   |   FB_ATM_TOTL_P5 <= 40.9
+|   |   |   |   |   AG_PRD_FOOD_XD <= 100.9: Growing (3.0)
+|   |   |   |   |   AG_PRD_FOOD_XD > 100.9
+|   |   |   |   |   |   BX_KLT_DINV_WD_GD_ZS <= 11.3: Normal (2.0)
+|   |   |   |   |   |   BX_KLT_DINV_WD_GD_ZS > 11.3: Growing (2.0)
+|   |   |   |   FB_ATM_TOTL_P5 > 40.9: Normal (3.0)
+|   MS_MIL_XPND_GD_ZS > 0
+|   |   SE_XPD_TOTL_GD_ZS <= 4.2
+|   |   |   IT_NET_BBND_P2 <= 6.8: Growing (90.0/20.0)
+|   |   |   IT_NET_BBND_P2 > 6.8
+|   |   |   |   FB_ATM_TOTL_P5 <= 45.9: Normal (5.0/1.0)
+|   |   |   |   FB_ATM_TOTL_P5 > 45.9: Growing (2.0)
+|   |   SE_XPD_TOTL_GD_ZS > 4.2
+|   |   |   MS_MIL_XPND_GD_ZS <= 1.9
+|   |   |   |   MS_MIL_XPND_GD_ZS <= 1.4
+|   |   |   |   |   SE_XPD_TOTL_GD_ZS <= 4.8: Normal (7.0/1.0)
+|   |   |   |   |   SE_XPD_TOTL_GD_ZS > 4.8
+|   |   |   |   |   |   IT_CEL_SETS_P2 <= 57.7: Growing (8.0)
+|   |   |   |   |   |   IT_CEL_SETS_P2 > 57.7
+|   |   |   |   |   |   |   SP_POP_1564_TO_ZS <= 63.8: Growing (2.0/1.0)
+|   |   |   |   |   |   |   SP_POP_1564_TO_ZS > 63.8
+|   |   |   |   |   |   |   |   SP_POP_GROW <= -0.7: Growing (2.0)
+|   |   |   |   |   |   |   |   SP_POP_GROW > -0.7: Normal (5.0)
+|   |   |   |   MS_MIL_XPND_GD_ZS > 1.4
+|   |   |   |   |   SE_XPD_TOTL_GD_ZS <= 4.4
+|   |   |   |   |   |   BX_KLT_DINV_WD_GD_ZS <= 2.9: Normal (3.0/1.0)
+|   |   |   |   |   |   BX_KLT_DINV_WD_GD_ZS > 2.9: Growing (2.0)
+|   |   |   |   |   SE_XPD_TOTL_GD_ZS > 4.4: Normal (11.0)
+|   |   |   MS_MIL_XPND_GD_ZS > 1.9: Growing (29.0/9.0)
+FB_ATM_TOTL_P5 > 59.3
+|   SP_POP_1564_TO_ZS <= 70.5
+|   |   BX_KLT_DINV_WD_GD_ZS <= 1.3: Stale (3.0)
+|   |   BX_KLT_DINV_WD_GD_ZS > 1.3: Normal (36.0/4.0)
+|   SP_POP_1564_TO_ZS > 70.5: Growing (3.0)
+
+Number of Leaves  : 	23
+
+Size of the tree : 	45
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         158               64.4898 %
+Incorrectly Classified Instances        87               35.5102 %
+Kappa statistic                          0.3399
+Mean absolute error                      0.2615
+Root mean squared error                  0.4483
+Relative absolute error                 70.8293 %
+Root relative squared error            104.4602 %
+Total Number of Instances              245     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.726     0.391      0.63      0.726     0.675      0.679    Growing
+                 0.605     0.267      0.663     0.605     0.633      0.669    Normal
+                 0.286     0.009      0.667     0.286     0.4        0.626    Stale
+Weighted Avg.    0.645     0.311      0.647     0.645     0.64       0.671
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 85 30  2 |  a = Growing
+ 45 69  0 |  b = Normal
+  5  5  4 |  c = Stale
+

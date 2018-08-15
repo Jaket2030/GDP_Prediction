@@ -1,0 +1,198 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     Robust SD 0.2-weka.filters.unsupervised.attribute.Remove-R1,14-16
+Instances:    245
+Attributes:   13
+              AG_PRD_FOOD_XD
+              BX_KLT_DINV_WD_GD_ZS
+              EN_POP_DNST
+              FB_ATM_TOTL_P5
+              IT_CEL_SETS_P2
+              IT_NET_BBND_P2
+              MS_MIL_XPND_GD_ZS
+              SE_PRE_ENRR
+              SE_XPD_TOTL_GD_ZS
+              SP_POP_0014_TO_ZS
+              SP_POP_1564_TO_ZS
+              SP_POP_GROW
+              TYPE1
+Test mode:20-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    0.8111266271769985
+    Node 3    8.709527275935038
+    Node 4    6.778766241044611
+    Node 5    -5.922483328372839
+    Node 6    -7.975272424775888
+    Node 7    5.981894675381612
+    Node 8    -4.831451972441419
+    Node 9    -2.062711475048075
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -1.8252657768010039
+    Node 3    -7.914434009014897
+    Node 4    -5.680583731810584
+    Node 5    5.881768696146197
+    Node 6    6.745941329401886
+    Node 7    -4.848554953827409
+    Node 8    4.838052884405144
+    Node 9    2.4660641582912093
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    0.20104942995512276
+    Node 3    0.6873557513661195
+    Node 4    -4.0781627891340495
+    Node 5    -3.6688720987674692
+    Node 6    2.4632113174345656
+    Node 7    -3.087844801739761
+    Node 8    -2.042614946008517
+    Node 9    -4.682776563137163
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -2.766304029747044
+    Attrib AG_PRD_FOOD_XD    7.049339832794384
+    Attrib BX_KLT_DINV_WD_GD_ZS    -3.43191553771735
+    Attrib EN_POP_DNST    10.117621521224011
+    Attrib FB_ATM_TOTL_P5    1.298139938313722
+    Attrib IT_CEL_SETS_P2    -8.204697960255523
+    Attrib IT_NET_BBND_P2    -6.506965174240778
+    Attrib MS_MIL_XPND_GD_ZS    2.424990883949634
+    Attrib SE_PRE_ENRR    -5.268667332148122
+    Attrib SE_XPD_TOTL_GD_ZS    -3.224955402419452
+    Attrib SP_POP_0014_TO_ZS    -7.715542134611379
+    Attrib SP_POP_1564_TO_ZS    7.513690019401463
+    Attrib SP_POP_GROW    -2.2072344624695557
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -1.2673814915912396
+    Attrib AG_PRD_FOOD_XD    12.758554649205387
+    Attrib BX_KLT_DINV_WD_GD_ZS    6.878597885602724
+    Attrib EN_POP_DNST    0.10332967951368777
+    Attrib FB_ATM_TOTL_P5    -1.2010262689840459
+    Attrib IT_CEL_SETS_P2    9.489851306530726
+    Attrib IT_NET_BBND_P2    2.8447744443394427
+    Attrib MS_MIL_XPND_GD_ZS    -7.004018556612791
+    Attrib SE_PRE_ENRR    -4.038012323240744
+    Attrib SE_XPD_TOTL_GD_ZS    -3.0418706437004155
+    Attrib SP_POP_0014_TO_ZS    5.99666501399797
+    Attrib SP_POP_1564_TO_ZS    -2.9020529725575686
+    Attrib SP_POP_GROW    -3.4103182084234804
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    1.570224940529753
+    Attrib AG_PRD_FOOD_XD    7.251456828827496
+    Attrib BX_KLT_DINV_WD_GD_ZS    -4.302260226279285
+    Attrib EN_POP_DNST    -1.435887312442405
+    Attrib FB_ATM_TOTL_P5    7.7971978242070445
+    Attrib IT_CEL_SETS_P2    -1.3995190005949547
+    Attrib IT_NET_BBND_P2    -2.742751558926028
+    Attrib MS_MIL_XPND_GD_ZS    5.569573735024005
+    Attrib SE_PRE_ENRR    -6.029648359151662
+    Attrib SE_XPD_TOTL_GD_ZS    12.682622847341483
+    Attrib SP_POP_0014_TO_ZS    0.3030913325031592
+    Attrib SP_POP_1564_TO_ZS    0.09013551086821092
+    Attrib SP_POP_GROW    2.9220913053242423
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -6.901918713394193
+    Attrib AG_PRD_FOOD_XD    0.6240086757201637
+    Attrib BX_KLT_DINV_WD_GD_ZS    8.928687373960377
+    Attrib EN_POP_DNST    -0.179324974111855
+    Attrib FB_ATM_TOTL_P5    4.333259439168897
+    Attrib IT_CEL_SETS_P2    6.231697140790874
+    Attrib IT_NET_BBND_P2    6.040649835164508
+    Attrib MS_MIL_XPND_GD_ZS    -18.899818824736887
+    Attrib SE_PRE_ENRR    -6.209338146705835
+    Attrib SE_XPD_TOTL_GD_ZS    -2.8681833619854227
+    Attrib SP_POP_0014_TO_ZS    -4.792135531058879
+    Attrib SP_POP_1564_TO_ZS    -8.362159273093075
+    Attrib SP_POP_GROW    -4.613254182421341
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    0.020863553382390838
+    Attrib AG_PRD_FOOD_XD    -5.65327272249389
+    Attrib BX_KLT_DINV_WD_GD_ZS    -0.32498186452949906
+    Attrib EN_POP_DNST    2.376229461864029
+    Attrib FB_ATM_TOTL_P5    -5.469064606130528
+    Attrib IT_CEL_SETS_P2    2.7436272537135964
+    Attrib IT_NET_BBND_P2    1.1383910078911266
+    Attrib MS_MIL_XPND_GD_ZS    0.24234200789126287
+    Attrib SE_PRE_ENRR    -0.08085515383678561
+    Attrib SE_XPD_TOTL_GD_ZS    3.136066311145063
+    Attrib SP_POP_0014_TO_ZS    2.1458413713682876
+    Attrib SP_POP_1564_TO_ZS    3.48266367058708
+    Attrib SP_POP_GROW    3.9923304666562967
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -3.4158033925616147
+    Attrib AG_PRD_FOOD_XD    7.66503205217112
+    Attrib BX_KLT_DINV_WD_GD_ZS    -1.7817952058776105
+    Attrib EN_POP_DNST    -5.890853156000426
+    Attrib FB_ATM_TOTL_P5    15.294461370550403
+    Attrib IT_CEL_SETS_P2    -5.313400118841287
+    Attrib IT_NET_BBND_P2    3.603161376017732
+    Attrib MS_MIL_XPND_GD_ZS    -6.035353438327217
+    Attrib SE_PRE_ENRR    2.3349016486669543
+    Attrib SE_XPD_TOTL_GD_ZS    -7.7469264429798
+    Attrib SP_POP_0014_TO_ZS    -6.0323279368324165
+    Attrib SP_POP_1564_TO_ZS    0.6414299491907338
+    Attrib SP_POP_GROW    -11.125012923530543
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    0.15453328970152108
+    Attrib AG_PRD_FOOD_XD    7.548422467334715
+    Attrib BX_KLT_DINV_WD_GD_ZS    0.4894634416281152
+    Attrib EN_POP_DNST    -3.3627448809962637
+    Attrib FB_ATM_TOTL_P5    0.31182079949013847
+    Attrib IT_CEL_SETS_P2    0.591142317160158
+    Attrib IT_NET_BBND_P2    2.6788997766404496
+    Attrib MS_MIL_XPND_GD_ZS    1.0297382641981232
+    Attrib SE_PRE_ENRR    -2.3602351252510454
+    Attrib SE_XPD_TOTL_GD_ZS    -5.081342832965768
+    Attrib SP_POP_0014_TO_ZS    0.28372366171604524
+    Attrib SP_POP_1564_TO_ZS    1.3697069500751613
+    Attrib SP_POP_GROW    2.227208464222002
+Class Growing
+    Input
+    Node 0
+Class Normal
+    Input
+    Node 1
+Class Stale
+    Input
+    Node 2
+
+
+Time taken to build model: 0.58 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         164               66.9388 %
+Incorrectly Classified Instances        81               33.0612 %
+Kappa statistic                          0.3874
+Mean absolute error                      0.2639
+Root mean squared error                  0.4302
+Relative absolute error                 69.964  %
+Root relative squared error             99.1527 %
+Total Number of Instances              245     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.706     0.238      0.679     0.706     0.692      0.762    Growing
+                 0.742     0.355      0.681     0.742     0.71       0.703    Normal
+                 0         0.018      0         0         0          0.572    Stale
+Weighted Avg.    0.669     0.28       0.628     0.669     0.648      0.718
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 72 29  1 |  a = Growing
+ 29 92  3 |  b = Normal
+  5 14  0 |  c = Stale
+
